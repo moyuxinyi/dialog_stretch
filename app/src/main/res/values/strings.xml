@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DialogStretch</string>
+
+    <!-- 通用的 确定/取消文字-->
+    <string name="common_confirm">确定</string>
+    <string name="common_cancel">取消</string>
+    <string name="stretch_animation_test">拉伸动画测试</string>
+</resources>

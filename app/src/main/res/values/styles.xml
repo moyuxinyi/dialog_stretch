@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 缩放动画 -->
+    <style name="ScaleAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/window_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/window_scale_out</item>
+    </style>
+
+    <!-- 右下缩放动画 -->
+    <style name="LowRightScaleAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/window_low_right_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/window_low_right_scale_out</item>
+    </style>
+</resources>
