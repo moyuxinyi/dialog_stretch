@@ -1,6 +1,6 @@
 # StretchDialogDemo
 
-一个支持拉伸动画的 Android Dialog 组件示例，具有优雅的文本追加与内容高度过渡动画效果。本 Demo 旨在提升用户的视觉体验。
+一个支持拉伸动画的 Android Dialog 组件示例，Demo里具有优雅的文本追加与内容高度过渡动画效果展示。本 Demo 旨在提升用户的视觉体验。
 
 ## ✨ 特性
 
