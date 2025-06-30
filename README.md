@@ -12,7 +12,7 @@
 ## 🎬 动效预览
 
 ### GIF预览
-![demo.gif](demo.gif)
+![demo_test.gif](demo_test.gif)
 
 ### 视频预览
-[video.mp4](video.mp4)
+[demo_video.mp4](demo_video.mp4)
