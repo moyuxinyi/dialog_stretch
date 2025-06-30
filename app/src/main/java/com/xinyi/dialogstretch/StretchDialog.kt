@@ -57,19 +57,11 @@ class StretchDialog(context: Context) : Dialog(context, R.style.BaseDialogTheme)
             override fun run() {
                 if (currentCount < 4) {
                     currentCount++
-
                     if (currentCount == 4) {
                         initParticularsText()
-                        // 收缩布局
-                        binding.llUiContainer.collapseTo(ViewGroup.LayoutParams.WRAP_CONTENT)
+                        binding.llUiContainer.expandToWrapContent()
                     } else {
-                        // 拼接文案
-                        binding.tvParticularsText.append(buildString {
-                            repeat(currentCount) {
-                                append("\n\n${PhilosophyQuotes.getRandomQuote()}")
-                            }
-                        })
-                        // 拉伸布局
+                        appendParticularsText(currentCount)
                         binding.llUiContainer.expandToWrapContent()
                     }
                     mHandler.postDelayed(this, 1000)
@@ -79,8 +71,23 @@ class StretchDialog(context: Context) : Dialog(context, R.style.BaseDialogTheme)
         mHandler.postDelayed(appendRunnable, 1000)
     }
 
+    /**
+     * 初始化文案
+     */
     private fun initParticularsText() {
         binding.tvParticularsText.text = "人类试图掌控时间，结果只是被钟表牵着走。"
+    }
+
+    /**
+     * 拼接文案
+     */
+    private fun appendParticularsText(count: Int) {
+        // 拼接文案
+        binding.tvParticularsText.append(buildString {
+            repeat(count) {
+                append("\n\n${PhilosophyQuotes.getRandomQuote()}")
+            }
+        })
     }
 
     private fun initListeners() {
